@@ -1,0 +1,140 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000;
+  }
+  input {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 600;
+  }
+
+  i {
+    margin-left: 80%;
+    margin-top: 0%;
+    color: yellow;
+  }
+
+  .nav-item {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: large;
+    margin-top: 3px;
+  }
+
+  #sh1 {
+    border-radius: 15px 50px;
+    background-image: linear-gradient(to bottom right, #FBD000, #F39C45);
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    align-content: center;
+  }
+
+  #sh1:hover {
+    outline: tomato solid 4px;
+  }
+
+  #sh2 {
+    border-radius: 15px 50px;
+    background-image: linear-gradient(to bottom right, #40A844, #BED88E);
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    align-content: center;
+    filter: grayscale();
+  }#sh2:hover {
+    outline: green solid 4px;
+  }
+
+  #sh3 {
+    border-radius: 15px 50px;
+    background-image: linear-gradient(to bottom right, #E52521, #E88A8A);
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    align-content: center;
+    filter: grayscale();
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 20px;
+    color: white;
+  }
+
+  #frame {
+    color: red;
+  }
+
+  .box {
+    background: grey;
+    width: 100px;
+    padding: 10px;
+    border: 2px solid yellow;
+    margin-left: 45%;
+    text-align: center;
+  }
+.q_box{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 500px;
+    padding: 20px;
+    height: 500px;
+    background-color: aliceblue;
+    box-shadow: 0 0 53px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.q_set{
+    display: none;
+}
+.q_set.active{
+    display: block;
+}
+.q_set h3{
+    margin: 0 0 15px;
+    font-size: larger;
+}
+.q_ans_row{
+    position: relative;
+    margin-bottom: 15px;
+}
+.q_ans_row input{
+    opacity:0;
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.q_ans_row span{
+    display: block;
+    padding: 8px 15px;
+    background-color: #bad0c9;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+.q_ans_row:hover span{
+    background-color: #9ab5ac;
+}
+.q_ans_row input:checked + span{
+    background-color: #ee7373;
+}
+.q_ans_row input[valid]:checked + span{
+    background-color: green;
+    color: #fff;
+}
+.q_footer{
+    padding: 10px 0 0;
+    text-align: right;
+}
