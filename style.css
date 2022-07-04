@@ -70,7 +70,11 @@ body {
     margin-left: 20px;
     color: white;
   }
-
+h3{
+  text-align: center; 
+  font-weight:600;
+  color: white;
+}
   #frame {
     color: red;
   }
@@ -89,8 +93,9 @@ body {
     width: 500px;
     padding: 20px;
     height: 500px;
-    background-color: aliceblue;
-    box-shadow: 0 0 53px rgba(0, 0, 0, 0.3);
+    background-color: #049CD8;
+    opacity: 70%;
+    box-shadow: 0 0 30px rgba(251, 208, 0);
     border-radius: 10px;
 }
 .q_set{
@@ -120,15 +125,18 @@ body {
 .q_ans_row span{
     display: block;
     padding: 8px 15px;
-    background-color: #bad0c9;
+    background-color: white;
     border-radius: 15px;
     transition: all 0.3s ease-out;
+    font-weight: 600;
 }
 .q_ans_row:hover span{
-    background-color: #9ab5ac;
+    background-color: rgb(186, 186, 186);
+    
 }
 .q_ans_row input:checked + span{
     background-color: #ee7373;
+    color: #fff;
 }
 .q_ans_row input[valid]:checked + span{
     background-color: green;
@@ -137,4 +145,10 @@ body {
 .q_footer{
     padding: 10px 0 0;
     text-align: right;
+}
+
+footer{
+  background-color: beige; 
+  margin-top: 7%;
+  border-radius: 40px 40px 0 0;
 }
